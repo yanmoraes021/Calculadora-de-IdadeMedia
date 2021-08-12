@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="yanca"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-11 08:13:50 "/>
+        <attribute name="created" value="eWFuY2E7REVTS1RPUC1PMUVINUhTOzIwMjEtMDgtMTE7IjA3OjA1OjQ2ICI7Mjc3Ng=="/>
+        <attribute name="edited" value="eWFuY2E7REVTS1RPUC1PMUVINUhTOzIwMjEtMDgtMTE7IjA4OjEzOjUwICI7MTsyODc5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="IdadePai, IdadeMae, MinhaIdade, IdadeIrmao, media" type="Integer" array="False" size=""/>
+            <declare name="irmao" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Qual a idade do seu Pai ?&quot;" newline="True"/>
+            <input variable="IdadePai"/>
+            <output expression="&quot;Qual a idade da Sua M&#227;e ?&quot;" newline="True"/>
+            <input variable="IdadeMae"/>
+            <output expression="&quot;Qual a sua Idade ?&quot;" newline="True"/>
+            <input variable="MinhaIdade"/>
+            <output expression="&quot;Voc&#234; tem irmao?&quot;" newline="True"/>
+            <input variable="irmao"/>
+            <if expression="irmao">
+                <then>
+                    <output expression="&quot;Qual a idade do seu Irm&#227;o?&quot;" newline="True"/>
+                    <input variable="IdadeIrmao"/>
+                    <assign variable="media" expression="(IdadePai+IdadeMae+MinhaIdade+IdadeIrmao)/4"/>
+                </then>
+                <else>
+                    <output expression="&quot;Voc&#234; n&#227;o possui irm&#227;o.&quot;" newline="True"/>
+                    <assign variable="media" expression="(IdadePai+IdadeMae+MinhaIdade)/3"/>
+                </else>
+            </if>
+            <output expression="&quot;A idade media da sua familia &#233;:&quot;" newline="True"/>
+            <output expression="media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
