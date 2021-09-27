@@ -6,16 +6,16 @@ var
 inicio
  contador <- 1
  idade <- 0
- escreva ("Olá! Poderia informar o sobrenome da sua família: ")
+ escreva ("OlÃ¡! Poderia informar o sobrenome da sua famÃ­lia: ")
  leia (sobrenome)
  escreva ("Quantos integrantes tem a Familia " ,sobrenome, "? ")
  leia (integrantes)
  enquanto (contador <= integrantes) faca
- escreva ("Digite a idade do",contador,"° Integrante da Familia ",sobrenome," : ")
+ escreva ("Digite a idade do",contador,"Â° Integrante da Familia ",sobrenome," : ")
  leia (ida)
  idade <- idade + ida
  contador <- contador + 1
  media <- idade/integrantes
  Fimenquanto
- escreva("A idade media da Familia ",sobrenome," é ",media:4," anos.")
+ escreva("A idade media da Familia ",sobrenome," Ã© ",media:2," anos.")
 fimalgoritmo
